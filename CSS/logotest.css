@@ -1,0 +1,126 @@
+.logotest{
+    width: 1em;
+    height: 0.5em; /* as the half of the width */
+    background-color: none;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid #0202a3ff;
+    border-bottom: 0;
+    transform: rotate(-35deg);
+    margin:0;
+    /*transition: all 2.0s ease-in-out;*/
+    float:left;
+}
+#logo-container{
+    /*margin:0 0 0 7%;*/
+    padding: 0.75rem 2rem;
+    position:fixed;
+
+}
+#logo-container:hover > #logotest /*> #logotest2*/ {
+    animation-name:loading;
+    animation-duration:2s;
+}
+#logo-container:hover > #logotest2{
+    animation-name:loading2;
+    animation-duration:2s;
+}
+
+
+#logotext{
+    display: flex;
+}
+
+#logotest2{
+    margin:2.25rem 0 0 0;
+    transform: rotate(145deg);
+    float:relative;
+}
+
+/*.logotest:hover{
+    animation-name: loading;
+    transform: rotate(360deg);
+   animation-duration: 2s;
+
+} */
+
+
+@keyframes loading{
+    0%{
+
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-395deg);
+    }
+}
+
+@keyframes loading2{
+    0%{
+
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-215deg);
+    }
+}
+
+    /*animation-name: webkitloading;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes webkitloading{
+    0%{
+        rotate(0deg);
+    }
+    25%{
+        rotate(45deg);
+    }   
+    75%{
+        rotate(180deg);
+    }
+    100%{
+        rotate(360deg);
+    }
+} */
+
+
+#IBlogo{
+    color:black;
+}
+
+#HUBlogo{
+    color:#ffb45f;
+}
+
+#logotextr{
+    font-size:2.5rem;
+    background:none;
+    padding:0;
+    margin:0;
+    /*animation-name:none imo !important;*/
+}
+
+@keyframes non{
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+
+#logotext{
+    top:0%;
+    left:25%;
+}

@@ -1,0 +1,131 @@
+.semi-circle{
+    width: 20px;
+    height: 10px; /* as the half of the width */
+    background-color: none;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid #0202a3ff;
+    border-bottom: 0;
+    transform: rotate(-35deg);
+
+  }
+
+  #logo-container{
+    /*margin:0 0 0 7%;*/
+    padding: 0.75rem 2rem;
+    /*position:fixed;*/
+    display: grid;
+    grid-template-columns: 45px 125px 40px;
+    grid-template-rows: 10px;
+    position: fixed;
+    z-index: 1;
+    
+}
+#logo-container:hover > #semi-circle-1 /*> #logotest2*/ {
+    animation-name:loading;
+    animation-duration:2s;
+}
+#logo-container:hover > #semi-circle-2{
+    animation-name:loading2;
+    animation-duration:2s;
+}
+
+
+/*#logotext{
+    display: flex;
+}*/
+
+#semi-circle-2{
+    margin:2.25rem 0 0 0;
+    transform: rotate(145deg);
+    float:relative;
+    /*transform: rotate(-215deg);*/
+}
+
+/*.logotest:hover{
+    animation-name: loading;
+    transform: rotate(360deg);
+   animation-duration: 2s;
+
+} */
+
+
+@keyframes loading{
+    0%{
+
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-395deg);
+    }
+}
+
+@keyframes loading2{
+    0%{
+
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-215deg);
+    }
+}
+
+    /*animation-name: webkitloading;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes webkitloading{
+    0%{
+        rotate(0deg);
+    }
+    25%{
+        rotate(45deg);
+    }   
+    75%{
+        rotate(180deg);
+    }
+    100%{
+        rotate(360deg);
+    }
+} */
+
+
+#IBlogo{
+    color:black;
+}
+
+#HUBlogo{
+    color:#ffb45f;
+}
+
+#logotextr{
+    background:none;
+    padding:0;
+    margin:0;
+    /*animation-name:none imo !important;*/
+    text-align: center;
+}
+
+@keyframes non{
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+
+#logotext{
+    top:0%;
+    left:25%;
+}

@@ -1,0 +1,90 @@
+#main-nav{
+    margin: 0 auto;
+}
+
+#main-nav ul{
+    list-style: none;
+    margin-top: 2%;
+}
+
+#main-nav ul li{
+    background: none;
+    width: 170px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    height: 55px;
+    text-align: center;
+    padding-top: 8px;
+}
+ #IA-a{
+     width:auto!important;
+ }
+ #EE-a{
+     width: auto!important;
+ }
+.sub1{
+    background: linear-gradient(35deg, #ffb45f, #0202a3ff)!important;
+    border-radius: 4px;
+    box-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.19), 0.5rem 0.6rem 0.6rem rgba(0,0,0,0.23);
+    transition:all 1s ease-in-out;
+}
+.sub1:hover{
+    background: linear-gradient(-35deg, #ffb45f, #0202a3ff)!important;
+    border-radius: 4px;
+    box-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.19), 0.5rem 0.6rem 0.6rem rgba(0,0,0,0.23);
+}
+/*@keyframes nav-li{
+    0%{
+        background: linear-gradient(35deg, #ffb45f, #0202a3ff)!important;
+    }
+    100%{
+        background: linear-gradient(-35deg, #ffb45f, #0202a3ff)!important;
+    }
+}*/
+/*.sub1::before{
+    background: linear-gradient(35deg, #ffb45f, #0202a3ff)!important;
+    border-radius: 4px;
+    margin: 0.5px;
+    box-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.19), 0.5rem 0.6rem 0.6rem rgba(0,0,0,0.23);
+    /*transition:all 0.25s ease-in-out;
+}
+.sub1::after{
+    background: linear-gradient(-35deg, #ffb45f, #0202a3ff)!important;
+    border-radius: 4px;
+    transform: scale(1.2);
+    margin: 0.5px;
+    box-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.19), 0.5rem 0.6rem 0.6rem rgba(0,0,0,0.23);
+}*/
+
+#main-nav ul ul{
+    display: none;
+}
+
+#main-nav ul li:hover > ul{
+    display: block;
+    /*transition: all 2s ease-in-out; TRANSITION???*/
+    background: linear-gradient(-35deg, #ffb45f, #0202a3ff);
+    /*-webkit-animation-name: fadein;
+    -webkit-animation-duration: 2s;*/
+}
+
+.sub2{
+    position: relative;
+    bottom: 67px;
+    text-align: center;
+    background: rgb(230, 230, 230)!important;
+    left: 135px;
+    border-radius: 4px;
+    color: black!important;
+}
+
+/*#main-nav ul ul ul{
+    margin-left: 13px;
+    top: 0;
+    position: absolute;
+}*/
